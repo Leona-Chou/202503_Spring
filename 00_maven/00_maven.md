@@ -1,4 +1,4 @@
-# 00_maven
+# 00_maven 筆記
 </br>
 
 [> 講義點此][1]
@@ -14,7 +14,6 @@
 
 ## 二、測試設定檔是否可以正常執行
 ### 添加 Lombok 依賴
-Lombok plugin
 ```xml
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -82,6 +81,11 @@ public class ToyotaEngine {
 當 Toyota 類別依賴於 ToyotaEngine 類別時，如果 ToyotaEngine 類別發生變化或異常，Toyota 類別可能需要相應地進行修正。這是因為 Toyota 類別直接依賴於 ToyotaEngine 類別的實現細節，導致它們之間的關係緊密耦合。這就稱作 **緊耦合（tight coupling）**。  
 
 想要抽換其他的引擎（像是 BenzEngine），則需要改變 Toyota 類別本身的程式。
+
+
+### 鬆耦合
+
+
 
   [1]: https://hackmd.io/Q0JZHRakTaSIOxRXm5O79w?view#%E5%BB%BA%E7%AB%8B-HelloSpring-%E5%B0%88%E6%A1%88 "01. Spring 框架介紹"
   [2]: https://hackmd.io/eYtjufldQa2QUMIHIpo8mg "依賴關係介紹"
